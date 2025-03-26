@@ -3,6 +3,7 @@ const API = 'https://reqres.in/api/users';
 const userListDiv = document.getElementById('userList');
 const message = document.getElementById('message');
 const createUserBtn = document.getElementById('createUser');
+const updateBtn=document.querySelector('.update-btn')
 let user=[]
 
 const updateUser=(id,name,job)=>{
@@ -71,6 +72,7 @@ const upDateFunction=async ()=>{
     }
 }
 createUserBtn.addEventListener('click', createUser);
+updateBtn.addEventListener('click',upDateFunction);
 const  userList =()=>{
     setTimeout(() => {
         userListDiv.innerHTML=''
