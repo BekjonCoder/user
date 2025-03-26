@@ -4,6 +4,7 @@ const userListDiv = document.getElementById('userList');
 const message = document.getElementById('message');
 const createUserBtn = document.getElementById('createUser');
 const updateBtn=document.querySelector('.update-btn')
+const deletebtn=document.querySelector('.delete-btn')
 let user=[]
 
 const updateUser=(id,name,job)=>{
